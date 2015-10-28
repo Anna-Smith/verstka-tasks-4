@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+@import url(https://fonts.googleapis.com/css?family=Chonburi);
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400,400italic);
+
+@font-face
+{
+    font-family: 'Plain Germanica Regular';
+    src: url('fonts/plain_germanica-webfont.woff2') format('woff2'),
+         url('fonts/plain_germanica-webfont.woff') format('woff'),
+         url('fonts/Plain Germanica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    background: #fefff9;
+    padding: 10px;
+}
+h1
+{
+    font: 500 100px/30px 'Plain Germanica Regular', serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+body
+{
+    border: 10px groove #777;
+    position: absolute;
+    font-size: 18px;
+}
+
+section
+{
+    border-top: 10px double #525252;
+    display: block;
+    -webkit-column-width: 500px;
+    -webkit-column-gap: 0;
+    -webkit-column-break-inside: avoid;
+}
+
+article
+{
+    text-indent: 15px;
+    -webkit-column-count: 3;
+    -webkit-column-rule: 1px solid #8f8d66;
+    padding: 20px;
+    text-align: justify;
+    break-before: column;
+    break-after: column;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    display: block;
+}
+
+p::first-letter
+{
+    font-size: 32px;
+}
+
+h2
+{
+    font: 500 32px 'Patua One', serif;
+    -webkit-column-span: all;
+    column-span: all;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+blockquote
+{
+    font-style: italic;
+    font-size: 20px;
+    -webkit-column-span: all;
+    column-span: all;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+span.quote
+{
+    font: 100 30px 'Chonburi', serif;
+}
+
+img.inText
+{
+    position: relative;
+    width: 90%;
+    display: inline;
+    border: 6px groove #000;
+    align-content: center;
+}
+
+img
+{
+    width: 400px;
+    display: block;
+    -webkit-column-span: all;
+    column-span: all;
+    border: 15px groove #616161;
+    margin: 10px auto;
+}
+
+.imgText
+{
+    font-style: italic;
+    display: block;
+    -webkit-column-span: all;
+    column-span: all;
+    text-align: center;
+    padding: 10px;
+    -webkit-column-rule: none;
+}
+
+.specialText
+{
+    font: 700 italic larger 'Sanchez', serif;
+}
